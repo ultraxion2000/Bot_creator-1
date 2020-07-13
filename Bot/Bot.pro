@@ -19,6 +19,7 @@ SOURCES += \
     Bot.cpp \
     create_bot_window.cpp \
     creator.cpp \
+    info.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -26,11 +27,17 @@ HEADERS += \
     Bot.h \
     create_bot_window.h \
     creator.h \
+    info.h \
     mainwindow.h
 
 FORMS += \
     create_bot_window.ui \
+    info.ui \
     mainwindow.ui
+
+TRANSLATIONS = QtLanguage_ru.ts
+
+CODECFORSRC     = UTF-8
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
