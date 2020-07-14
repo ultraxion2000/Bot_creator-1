@@ -34,6 +34,8 @@ private slots:
     void on_CreateBotButton_clicked();   
     void on_info_clicked();
 
+    void on_comboBox_activated(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     QTranslator qtLanguageTranslator;   // Выделяем перевод в отдельном поле, иначе ничего работать не будет

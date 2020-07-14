@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent):
     connect(Info, &info::infoWindow, this, &MainWindow::show);
 
     // Задаём два пункта с текстом локалей в комбобоксе
-        ui->comboBox->addItems(QStringList() << "ru_RU" << "en_US");
+        ui->comboBox->addItems(QStringList() << "en_US" << "ru_RU");
 
         // подключаем к сигналу изменения пункта комбобокса лямбда функцию,
         // в которой будет изменяться перевод приложения
@@ -61,5 +61,6 @@ void MainWindow::changeEvent(QEvent *event)
 void MainWindow::on_info_clicked()
 {
     Info ->show();
-    this->close();
+
 }
+
