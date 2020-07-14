@@ -63,3 +63,4 @@ void MainWindow::on_info_clicked()
     Info ->show();
 
 }
+
