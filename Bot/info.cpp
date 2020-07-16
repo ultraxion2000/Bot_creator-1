@@ -6,6 +6,8 @@ info::info(QWidget *parent) :
     ui(new Ui::info)
 {
     ui->setupUi(this);
+    QPixmap pix(":/resourec/img/SpbGUTelekom.png");
+    ui->image2->setPixmap(pix);
 }
 
 info::~info()

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>777</width>
-    <height>771</height>
+    <width>550</width>
+    <height>652</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -16,77 +16,149 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(255, 255, 255)</string>
+   <string notr="true">border-image: url(:/resourec/img/depositphotos_111072456-stock-video-light-and-dark-tech-gears.jpg) 0 0 0 0 ;</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_11">
-   <item row="0" column="0" colspan="5">
-    <layout class="QGridLayout" name="gridLayout_4">
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_11">
+   <item row="9" column="2">
+    <spacer name="horizontalSpacer_9">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>173</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="9" column="3" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_6">
        <property name="font">
         <font>
-         <family>Sitka Heading</family>
-         <pointsize>14</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
+         <family>Sitka Banner</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#de9400;&quot;&gt;Bot Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#cc8800;&quot;&gt;Flip the money&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_15">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../../../Users/Александр/Desktop/sut.png</pixmap>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="1" column="0" colspan="5">
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_12">
-       <property name="font">
-        <font>
-         <family>Sitka Text</family>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#d89000;&quot;&gt;Bot's name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="BotsName"/>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="Token"/>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_13">
+      <widget class="QCheckBox" name="checkBox_4">
        <property name="font">
         <font>
          <family>Sitka Text</family>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#c78500;&quot;&gt;Token&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>Only for admin</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="AddFlip">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
        </property>
       </widget>
      </item>
     </layout>
    </item>
-   <item row="2" column="0" colspan="5">
+   <item row="10" column="2">
+    <spacer name="horizontalSpacer_10">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>173</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Sitka Heading</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ec9d00;&quot;&gt;Functions&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <family>Sitka Banner</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ec9d00;&quot;&gt;Message in response to the command&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="5">
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="0">
       <widget class="QLabel" name="label_14">
@@ -96,7 +168,7 @@
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#e39700;&quot;&gt;Prefix&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -105,6 +177,9 @@
      </item>
      <item row="0" column="1">
       <widget class="QComboBox" name="comboBox">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <item>
         <property name="text">
          <string>Select prefix</string>
@@ -139,98 +214,61 @@
      </item>
     </layout>
    </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label">
-     <property name="font">
-      <font>
-       <family>Sitka Heading</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
+   <item row="11" column="2">
+    <spacer name="horizontalSpacer_11">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>173</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="13" column="4">
+    <widget class="QPushButton" name="CreateButton">
+     <property name="styleSheet">
+      <string notr="true">border-image:rgb(255, 255, 255)</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ec9d00;&quot;&gt;Functions&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Create</string>
      </property>
     </widget>
    </item>
-   <item row="4" column="0" colspan="2">
-    <widget class="QLabel" name="label_2">
-     <property name="font">
-      <font>
-       <family>Sitka Banner</family>
-       <pointsize>11</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ec9d00;&quot;&gt;Message in response to the command&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0" colspan="5">
-    <layout class="QGridLayout" name="gridLayout_3">
+   <item row="11" column="3" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_10">
      <item row="0" column="0">
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="label_10">
        <property name="font">
         <font>
-         <family>Sitka Text</family>
+         <family>Sitka Banner</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#d58e00;&quot;&gt;Command&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d99100;&quot;&gt;Set a directory&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="comadLine"/>
-     </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
+      <widget class="QLineEdit" name="dirLine">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
-       <property name="font">
-        <font>
-         <family>Sitka Text</family>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#cb8700;&quot;&gt;Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="messLine"/>
-     </item>
-    </layout>
-   </item>
-   <item row="6" column="0" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
-     <item>
-      <widget class="QCheckBox" name="checkBox_5">
-       <property name="font">
-        <font>
-         <family>Sitka Text</family>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Only for admin</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_2">
+      <spacer name="horizontalSpacer_8">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -242,29 +280,32 @@
        </property>
       </spacer>
      </item>
-     <item>
-      <widget class="QPushButton" name="AddMess">
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
-        <string>Add</string>
+        <string>select dir</string>
        </property>
       </widget>
      </item>
     </layout>
    </item>
-   <item row="7" column="1">
-    <spacer name="verticalSpacer">
+   <item row="13" column="3">
+    <spacer name="horizontalSpacer">
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Horizontal</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>20</width>
-       <height>40</height>
+       <width>173</width>
+       <height>25</height>
       </size>
      </property>
     </spacer>
    </item>
-   <item row="8" column="0" colspan="2">
+   <item row="9" column="0" colspan="2">
     <layout class="QGridLayout" name="gridLayout_6">
      <item row="0" column="0">
       <widget class="QLabel" name="label_5">
@@ -275,6 +316,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d18b00;&quot;&gt;Clear the chat&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -287,6 +331,9 @@
         <font>
          <family>Sitka Text</family>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
         <string>Only for admin</string>
@@ -308,6 +355,9 @@
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="AddClear">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
         <string>Add</string>
        </property>
@@ -315,23 +365,10 @@
      </item>
     </layout>
    </item>
-   <item row="8" column="2">
-    <spacer name="horizontalSpacer_9">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>173</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="8" column="3" colspan="2">
-    <layout class="QGridLayout" name="gridLayout_5">
+   <item row="10" column="3" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_8">
      <item row="0" column="0">
-      <widget class="QLabel" name="label_6">
+      <widget class="QLabel" name="label_8">
        <property name="font">
         <font>
          <family>Sitka Banner</family>
@@ -340,17 +377,23 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#cc8800;&quot;&gt;Flip the money&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d68f00;&quot;&gt;Mass mailing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QCheckBox" name="checkBox_4">
+      <widget class="QCheckBox" name="checkBox_2">
        <property name="font">
         <font>
          <family>Sitka Text</family>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
         <string>Only for admin</string>
@@ -358,7 +401,7 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <spacer name="horizontalSpacer_4">
+      <spacer name="horizontalSpacer_6">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -371,7 +414,10 @@
       </spacer>
      </item>
      <item row="1" column="2">
-      <widget class="QPushButton" name="AddFlip">
+      <widget class="QPushButton" name="AddMassMelling">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
         <string>Add</string>
        </property>
@@ -379,10 +425,118 @@
      </item>
     </layout>
    </item>
-   <item row="9" column="0" colspan="2">
+   <item row="6" column="0" colspan="5">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>Sitka Text</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#d58e00;&quot;&gt;Command&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="comadLine">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Text</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#cb8700;&quot;&gt;Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="messLine">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" colspan="5">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <family>Sitka Text</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#c78500;&quot;&gt;Token&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <family>Sitka Text</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#d89000;&quot;&gt;Bot's name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="Token">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="BotsName">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="10" column="0" colspan="2">
     <layout class="QGridLayout" name="gridLayout_7">
      <item row="2" column="2">
       <widget class="QPushButton" name="AddInfo">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
         <string>Add</string>
        </property>
@@ -408,6 +562,9 @@
          <family>Sitka Text</family>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
         <string>Only for admin</string>
        </property>
@@ -423,6 +580,9 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#dd9300;&quot;&gt;Message with user's info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
@@ -430,71 +590,20 @@
      </item>
     </layout>
    </item>
-   <item row="9" column="2">
-    <spacer name="horizontalSpacer_10">
+   <item row="12" column="4">
+    <spacer name="verticalSpacer_2">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Vertical</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>173</width>
-       <height>20</height>
+       <width>20</width>
+       <height>31</height>
       </size>
      </property>
     </spacer>
    </item>
-   <item row="9" column="3" colspan="2">
-    <layout class="QGridLayout" name="gridLayout_8">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_8">
-       <property name="font">
-        <font>
-         <family>Sitka Banner</family>
-         <pointsize>11</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d68f00;&quot;&gt;Mass mailing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QCheckBox" name="checkBox_2">
-       <property name="font">
-        <font>
-         <family>Sitka Text</family>
-        </font>
-       </property>
-       <property name="text">
-        <string>Only for admin</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <spacer name="horizontalSpacer_6">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="1" column="2">
-      <widget class="QPushButton" name="AddMassMelling">
-       <property name="text">
-        <string>Add</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="10" column="0" colspan="2">
+   <item row="11" column="0" colspan="2">
     <layout class="QGridLayout" name="gridLayout_9">
      <item row="0" column="0">
       <widget class="QLabel" name="label_9">
@@ -505,6 +614,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#da9100;&quot;&gt;Mafia game&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -517,6 +629,9 @@
         <font>
          <family>Sitka Text</family>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
         <string>Only for admin</string>
@@ -538,6 +653,9 @@
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="AddMafia">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
         <string>Add</string>
        </property>
@@ -545,45 +663,25 @@
      </item>
     </layout>
    </item>
-   <item row="10" column="2">
-    <spacer name="horizontalSpacer_11">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>173</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="10" column="3" colspan="2">
-    <layout class="QGridLayout" name="gridLayout_10">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_10">
+   <item row="7" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QCheckBox" name="checkBox_5">
        <property name="font">
         <font>
-         <family>Sitka Banner</family>
-         <pointsize>11</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>Sitka Text</family>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d99100;&quot;&gt;Set a directory&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>Only for admin</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLineEdit" name="dirLine">
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <spacer name="horizontalSpacer_8">
+     <item>
+      <spacer name="horizontalSpacer_2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -595,45 +693,33 @@
        </property>
       </spacer>
      </item>
-     <item row="1" column="2">
-      <widget class="QPushButton" name="pushButton">
+     <item>
+      <widget class="QPushButton" name="AddMess">
+       <property name="styleSheet">
+        <string notr="true">border-image:rgb(255, 255, 255)</string>
+       </property>
        <property name="text">
-        <string>select dir</string>
+        <string>Add</string>
        </property>
       </widget>
      </item>
     </layout>
    </item>
-   <item row="11" column="4">
-    <spacer name="verticalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
+   <item row="1" column="1" colspan="3">
+    <widget class="QLabel" name="label_11">
+     <property name="font">
+      <font>
+       <family>Sitka Heading</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>31</height>
-      </size>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
-    </spacer>
-   </item>
-   <item row="12" column="3">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>173</width>
-       <height>25</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="12" column="4">
-    <widget class="QPushButton" name="CreateButton">
      <property name="text">
-      <string>Create</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#de9400;&quot;&gt;Bot Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </item>

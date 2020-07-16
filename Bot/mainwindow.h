@@ -4,9 +4,8 @@
 #include <QMainWindow>
 #include <create_bot_window.h>
 
-#include <QMainWindow>
-#include <QTranslator>
-#include <QEvent>
+
+
 
 #include <info.h>
 
@@ -25,20 +24,21 @@ public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-protected:
-    // Метод получения событий в главном окне приложения
-    // В нём будет производиться проверка события смены перевода приложения
-    void changeEvent(QEvent * event) override;
 
 private slots:
     void on_CreateBotButton_clicked();   
     void on_info_clicked();
 
-    void on_comboBox_activated(const QString &arg1);
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_clicked();
+
+
+
 
 private:
     Ui::MainWindow *ui;
-    QTranslator qtLanguageTranslator;   // Выделяем перевод в отдельном поле, иначе ничего работать не будет
     Create_bot_window *CreateWindow;
     info *Info;
 };

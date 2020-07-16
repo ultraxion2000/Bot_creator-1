@@ -6,6 +6,11 @@ Create_bot_window::Create_bot_window(QWidget *parent) :
     ui(new Ui::Create_bot_window)
 {
     ui->setupUi(this);
+    QPixmap bkgnd(":/resourec/img/depositphotos_111072456-stock-video-light-and-dark-tech-gears.jpg");
+        bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+        QPalette palette;
+        palette.setBrush(QPalette::Background, bkgnd);
+        this->setPalette(palette);
 }
 
 Create_bot_window::~Create_bot_window()

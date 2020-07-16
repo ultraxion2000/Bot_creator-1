@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/resourec">
+        <file>img/SpbGUTelekom.png</file>
+        <file>img/356_2345.png</file>
+        <file>img/character-16-563887.png</file>
+        <file>img/8.png</file>
+        <file>img/iSW70U3I1.png.jpg</file>
+        <file>img/depositphotos_111072456-stock-video-light-and-dark-tech-gears.jpg</file>
+    </qresource>
+</RCC>
