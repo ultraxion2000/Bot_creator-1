@@ -20,7 +20,15 @@ public:
 signals:
     void menuW();
 
+
 private slots:
+
+
+    void mouseMoveEvent(QMouseEvent *);
+    void mousePressEvent(QMouseEvent *);
+    void mouseReleaseEvent(QMouseEvent *);
+
+
     void on_CreateBotButton_clicked();
 
     void on_AddMess_clicked();
@@ -55,8 +63,15 @@ private slots:
 
     void on_CreateButton_clicked();
 
+    void on_pushButton_2_clicked();
+
+
+
+    void on_Back_clicked();
+
 private:
     Ui::Create_bot_window *ui;
+    QPoint myPos1;
     Creator bot;
     bool mes_permiss;
     bool clear_permiss;
@@ -65,6 +80,7 @@ private:
     bool melling_permiss;
     bool game_permiss;
     QString mes, com;
+
 };
 
 #endif // CREATE_BOT_WINDOW_H

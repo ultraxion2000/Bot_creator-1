@@ -20,8 +20,15 @@ signals:
 private slots:
     void on_info_clicked();
 
+    void mouseMoveEvent(QMouseEvent *);
+    void mousePressEvent(QMouseEvent *);
+    void mouseReleaseEvent(QMouseEvent *);
+
+    void on_pushButton_clicked();
+
 private:
     Ui::info *ui;
+    QPoint myPos2;
 };
 
 #endif // INFO_H
