@@ -1,0 +1,10 @@
+debug/Bot.o
+debug/create_bot_window.o
+debug/creator.o
+debug/info.o
+debug/main.o
+debug/mainwindow.o
+debug/qrc_resourse.o
+debug/moc_create_bot_window.o
+debug/moc_info.o
+debug/moc_mainwindow.o

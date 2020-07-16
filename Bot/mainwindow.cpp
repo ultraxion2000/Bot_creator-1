@@ -5,6 +5,7 @@
 #include <QLibraryInfo>
 #include <QDebug>
 #include <QPixmap>
+#include <QtGui>
 
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent),
@@ -18,8 +19,8 @@ MainWindow::MainWindow(QWidget *parent):
     ui->image->setPixmap(pix);
 
 
-    CreateWindow = new Create_bot_window();
-    connect(CreateWindow, &Create_bot_window::menuW, this, &MainWindow::show);
+    CreateWindow1 = new Create_bot_window();
+    connect(CreateWindow1, &Create_bot_window::menuW, this, &MainWindow::show);
 
     Info = new info();
     connect(Info, &info::infoWindow, this, &MainWindow::show);
@@ -35,7 +36,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_CreateBotButton_clicked()
 {
-    CreateWindow->show();
+    CreateWindow1->show();
     this->close();
 }
 
@@ -58,3 +59,20 @@ void MainWindow::on_pushButton_clicked()
 
 }
 
+void MainWindow::mouseMoveEvent(QMouseEvent *e)
+{
+    if(myPos.x()>=0 && e->buttons()&& Qt::LeftButton)
+    {
+        QPoint diff = e->pos()- myPos;
+        QPoint newpos = this->pos()+diff;
+        this->move(newpos);
+    }
+}
+void MainWindow::mousePressEvent(QMouseEvent *e)
+{
+    myPos = e->pos();
+}
+void MainWindow::mouseReleaseEvent(QMouseEvent *e)
+{
+    myPos = QPoint(-1,1);
+}

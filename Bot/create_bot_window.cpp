@@ -1,16 +1,18 @@
 #include "create_bot_window.h"
 #include "ui_create_bot_window.h"
-
+#include <QtGui>
 Create_bot_window::Create_bot_window(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Create_bot_window)
 {
     ui->setupUi(this);
-    QPixmap bkgnd(":/resourec/img/depositphotos_111072456-stock-video-light-and-dark-tech-gears.jpg");
+
+    QPixmap bkgnd(":/resourec/img/1579284620_32-89.jpg");
         bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
         QPalette palette;
         palette.setBrush(QPalette::Background, bkgnd);
         this->setPalette(palette);
+      this->setWindowFlags(Qt::FramelessWindowHint);
 }
 
 Create_bot_window::~Create_bot_window()
@@ -156,4 +158,35 @@ void Create_bot_window::on_CreateButton_clicked()
 {
     bot.set_directory(ui->dirLine->text());
     bot.create_bot_file();
+}
+
+void Create_bot_window::mouseMoveEvent(QMouseEvent *e)
+{
+    if(myPos1.x()>=0 && e->buttons()&& Qt::LeftButton)
+    {
+        QPoint diff = e->pos()- myPos1;
+        QPoint newpos = this->pos()+diff;
+        this->move(newpos);
+    }
+}
+void Create_bot_window::mousePressEvent(QMouseEvent *e)
+{
+    myPos1 = e->pos();
+}
+void Create_bot_window::mouseReleaseEvent(QMouseEvent *e)
+{
+    myPos1 = QPoint(-1,1);
+}
+
+void Create_bot_window::on_pushButton_2_clicked()
+{
+    close();
+}
+
+
+
+void Create_bot_window::on_Back_clicked()
+{
+    this->close();
+    emit menuW();
 }

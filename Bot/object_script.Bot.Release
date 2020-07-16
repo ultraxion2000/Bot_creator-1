@@ -1,0 +1,10 @@
+release/Bot.o
+release/create_bot_window.o
+release/creator.o
+release/info.o
+release/main.o
+release/mainwindow.o
+release/qrc_resourse.o
+release/moc_create_bot_window.o
+release/moc_info.o
+release/moc_mainwindow.o
