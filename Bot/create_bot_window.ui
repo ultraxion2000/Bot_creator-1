@@ -647,7 +647,7 @@ background-color:rgb(170, 0, 0);
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-image: url(:/resourec/img/blue-arrow-75.png)</string>
+        <string notr="true">border-image: url(:/resourec/img/arrows-309037_640.png)</string>
        </property>
        <property name="text">
         <string/>

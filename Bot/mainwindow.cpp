@@ -13,6 +13,17 @@ MainWindow::MainWindow(QWidget *parent):
 {
     ui->setupUi(this);
 
+    ui->comboBox->addItems(QStringList() << "en_US" << "ru_RU");
+
+    connect(ui->comboBox, static_cast<void (QComboBox::*)(const QString &)>(&QComboBox::currentIndexChanged),
+                [=](const QString &str){
+            qtLanguageTranslator.load("QtLanguage_" + str, ".");   // Загружаем перевод
+            qApp->installTranslator(&qtLanguageTranslator);        // Устанавливаем перевод в приложение
+        });
+    // Сделаем первоначальную инициализацию перевода для окна прилоежния
+        qtLanguageTranslator.load(QString("QtLanguage_") + QString("en_US"));
+        qApp->installTranslator(&qtLanguageTranslator);
+
     this->setWindowFlags(Qt::FramelessWindowHint);
 
     QPixmap pix(":/resourec/img/character-16-563887.png");
@@ -75,4 +86,11 @@ void MainWindow::mousePressEvent(QMouseEvent *e)
 void MainWindow::mouseReleaseEvent(QMouseEvent *e)
 {
     myPos = QPoint(-1,1);
+}
+void MainWindow::changeEvent(QEvent *event)
+{
+    // В случае получения события изменения языка приложения
+    if (event->type() == QEvent::LanguageChange) {
+        ui->retranslateUi(this);    // переведём окно заново
+    }
 }

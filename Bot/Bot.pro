@@ -33,9 +33,11 @@ HEADERS += \
 FORMS += \
     create_bot_window.ui \
     info.ui \
-    mainwindow.ui
+    mainwindow.ui\
 
+TRANSLATIONS = QtLanguage_ru.ts \
 
+CODECFORSRC     = UTF-8
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

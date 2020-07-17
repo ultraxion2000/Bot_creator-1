@@ -1,17 +1,14 @@
 <RCC>
     <qresource prefix="/resourec">
         <file>img/SpbGUTelekom.png</file>
-        <file>img/356_2345.png</file>
         <file>img/character-16-563887.png</file>
         <file>img/8.png</file>
         <file>img/iSW70U3I1.png.jpg</file>
-        <file>img/depositphotos_111072456-stock-video-light-and-dark-tech-gears.jpg</file>
         <file>img/add.png</file>
         <file>img/kisspng-clip-art-portable-network-graphics-computer-icons-our-process-1-24x1-5d2368e39b6c10.6861182015626016996366.jpg</file>
         <file>img/kisspng-logo-brand-font-forward-button-5b29b23921a2a6.1743000215294592571378.jpg</file>
         <file>img/i2X0SOGNC.jpg</file>
         <file>img/1579284620_32-89.jpg</file>
-        <file>img/kisspng-computer-icons-arrow-download-symbol-5af567c018fe92.0217390015260323201024.jpg</file>
-        <file>img/blue-arrow-75.png</file>
+        <file>img/arrows-309037_640.png</file>
     </qresource>
 </RCC>
