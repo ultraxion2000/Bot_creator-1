@@ -437,7 +437,7 @@ public:
         QFont font9;
         font9.setPointSize(18);
         Back->setFont(font9);
-        Back->setStyleSheet(QString::fromUtf8("border-image: url(:/resourec/img/blue-arrow-75.png)"));
+        Back->setStyleSheet(QString::fromUtf8("border-image: url(:/resourec/img/arrows-309037_640.png)"));
 
         verticalLayout->addWidget(Back, 0, Qt::AlignLeft);
 

@@ -129,14 +129,12 @@ release/qrc_resourse.cpp: resourse.qrc \
 		img/blue-arrow-75.png \
 		img/1579284620_32-89.jpg \
 		img/SpbGUTelekom.png \
-		img/356_2345.png \
 		img/add.png \
-		img/kisspng-computer-icons-arrow-download-symbol-5af567c018fe92.0217390015260323201024.jpg \
 		img/iSW70U3I1.png.jpg \
+		img/arrows-309037_640.png \
 		img/8.png \
 		img/character-16-563887.png \
-		img/i2X0SOGNC.jpg \
-		img/depositphotos_111072456-stock-video-light-and-dark-tech-gears.jpg
+		img/i2X0SOGNC.jpg
 	C:\Qt\5.15.0\mingw81_32\bin\rcc.exe -name resourse resourse.qrc -o release\qrc_resourse.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
