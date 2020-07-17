@@ -1,10 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include <QMainWindow>
-
+#include<QWidget>
 #include <create_bot_window.h>
 #include <info.h>
+#include <QTranslator>
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -32,9 +32,12 @@ private slots:
     void mousePressEvent(QMouseEvent *);
     void mouseReleaseEvent(QMouseEvent *);
 
-
+protected:
+    void changeEvent(QEvent * event) override;
 private:
     Ui::MainWindow *ui;
+  QTranslator qtLanguageTranslator;
+
     QPoint myPos;
     Create_bot_window *CreateWindow1;
     info *Info;
